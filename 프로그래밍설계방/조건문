@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class remainder {
+
+	public static void main(String[] args) {
+		String message = "정수를 주세요.";
+		String input = JOptionPane.showInputDialog(message);
+		int n = Integer.parseInt(input);
+		if (n%9==0) {
+			System.out.println("정수 "+ n + "은 9로 나누어 떨어지나?true");
+			
+		}else {
+			System.out.println("정수 "+ n + "은 9로 나누어 떨어지나?False");
+		}
+
+	}
+
+}
