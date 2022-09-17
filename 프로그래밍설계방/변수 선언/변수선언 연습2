@@ -1,0 +1,17 @@
+import javax.swing.*;
+import java.text.*;
+
+public class Mi2Km {
+
+	public static void main(String[] args) {
+		String message = "거리가 몇 마일입니까?";
+		String input = JOptionPane.showInputDialog(message);
+		int distance = Integer.parseInt(input);
+		double mile = distance * 1.640934;
+		DecimalFormat f = new DecimalFormat("0.0");
+		System.out.println(distance + "km는 " + f.format(mile) + "입니다");
+		
+
+	}
+
+}
